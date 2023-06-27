@@ -42,6 +42,8 @@ const handler = NextAuth({
   pages: {
     error: "/login",
   },
+  secret: process.env.NEXTAUTH_SECRET,
+  trustHost: true,
 });
 
 export { handler as GET, handler as POST };

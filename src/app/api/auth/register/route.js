@@ -3,7 +3,6 @@ import connect from "@/utils/db";
 import { NextResponse } from 'next/server'
  
 export async function POST(request) {
-  console.log("🚀 ~ file: route.js:6 ~ POST ~ request:", request)
   const { email, password } = await request.json()
   
   await connect();
