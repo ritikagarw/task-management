@@ -42,7 +42,7 @@ const handler = NextAuth({
   pages: {
     error: "/login",
   },
-  secret: process.env.NEXTAUTH_SECRET,
+  secret: "mysecretkey",
   trustHost: true,
 });
 
